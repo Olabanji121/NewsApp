@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP"
+			crossorigin="anonymous"
+		/>
+		<style>
+			body {
+				background: #59c173; /* fallback for old browsers */
+				background: -webkit-linear-gradient(
+					to right,
+					#5d26c1,
+					#a17fe0,
+					#59c173
+				); /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(
+					to right,
+					#5d26c1,
+					#a17fe0,
+					#59c173
+				); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			}
+
+			.align {
+				text-align: center;
+			}
+
+			.card2 {
+				background: #82e07f9c;
+			}
+	
+			.btn2{
+				display: flex;
+    			justify-content: space-between;
+			}
+
+		
+
+			/* .profile {
+        
+        height: 100%;
+      } */
+		</style>
+
+		<title>NEWS 24</title>
+	</head>
+	<body class="bg-gradient-dark">
+		<nav class="navbar navbar-dark bg-primary mb-3">
+			<div class="container">
+				<a href="#" class="navbar-brand">News-24</a>
+			</div>
+		</nav>
+
+		<div class="container-fluid searchContainer">
+			<div class="search card card-body">
+				<h1>Search News</h1>
+				<div class="alert alert-dismissible alert-danger">
+					<button type="button" class="close" data-dismiss="alert">
+						&times;
+					</button>
+					<strong>Oh snap! Input your Search Text </strong>
+					and try submitting again.
+				</div>
+				<!-- <p class="lead">Enter picture name</p> -->
+				<form>
+					<!-- <label for="search"></label> -->
+					<input
+						type="text"
+						id="search"
+						class=" form-control"
+						placeholder="Enter your Search KeyWord"
+					/>
+					<div class="btn2">
+						
+								<button id="btnSearch" class="btn btn-success mt-3" type="button">
+										SEARCH
+									</button>
+									<button  id="back" class=" btn btn-success mt-3" type="button">
+										BACK
+									</button>
+							
+					</div>
+					
+				</form>
+			</div>
+			<div cla></div>
+			<br />
+
+			
+			
+			<!-- <div id="gifs">
+				<div class="row">
+					<div class="col-md-3 profile "></div>
+					<div class="col-md-3 profile"></div>
+					<div class="col-md-3 profile"></div>
+					<div class="col-md-3 profile"></div>
+					<div class="col-md-3 profile"></div>
+
+					<div class="col-md-3 profile"></div>
+					<div class="col-md-3 profile"></div>
+					<div class="col-md-3 profile"></div>
+				</div>
+			</div> -->
+
+			<div class="container">
+					<div id="loading" class="mx-auto" style="width: 400px;">
+							<img src="loading.gif" alt="loading" class="loading" style="width: 100%;" />
+					</div>
+							
+			</div>
+			<div class="container showResult">
+				<div class="card-deck">
+						<div class="card result"></div>
+							<div class="card result"></div>
+							<div class="card result"></div>
+							<div class="card result"></div>
+				</div>
+				<div class="card-deck mt-3">
+						<div class="card result"></div>
+							<div class="card result"></div>
+							<div class="card result"></div>
+							<div class="card result"></div>
+				</div>
+			</div>
+
+
+			<div class="showONload">
+					<div class="container">
+							<div class="card-deck">
+								<div class="card profile">
+									
+								</div>
+								<div class="card profile ">
+									
+								</div>
+								<div class="card profile">
+									
+								</div>
+								<div class="card profile">
+									
+								</div>
+							</div>
+						</div>
+			
+						<div class="container">
+							<div class="card-deck mt-3">
+								<div class="card profile" >
+									
+								</div>
+								<div class="card profile " >
+									
+								</div>
+								<div class="card profile" >
+									
+								</div>
+								<div class="card profile" >
+									
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="card-deck mt-3">
+								<div class="card profile">
+									
+								</div>
+								<div class="card profile ">
+									
+								</div>
+								<div class="card profile" >
+									
+								</div>
+								<div class="card profile">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			
+		<footer class="mt-5 p-3 text-center bg-light">
+			&copy; ASODev 2019.
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./newsApi.js"></script>
+		<script src="./UI.js"></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
