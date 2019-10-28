@@ -14,7 +14,6 @@ result.style.display='none';
 alert.style.display='none'
 
 backBtn.addEventListener('click', ()=>{
-    console.log('back btn')
     loadOnDom()
     result.style.display='none'
     displayOnLoad.style.display='block';
@@ -28,10 +27,9 @@ searchBtn.addEventListener("click", e => {
 
 	const input = inputField.value.trim();
 	if (input !== "") {
-        // loading.style.display='none'
         newsApi.getNewsBysearch(input)
         .then(dats => {
-			console.log(dats);
+			
 			// console.log(`source:${name}, author:${author}, tittle:${title}`);
 			dats.articles.forEach((dat, index) => {
 				const {
@@ -77,13 +75,12 @@ function loadOnDom() {
 	newsApi
 		.getNewsData()
 		.then(res => {
-			console.log(res);
-			const {
-				source: { name },
-				author,
-				title
-			} = res.articles[0];
-			console.log(`source:${name}, author:${author}, tittle:${title}`);
+			// const {
+			// 	source: { name },
+			// 	author,
+			// 	title
+			// } = res.articles[0];
+			// console.log(`source:${name}, author:${author}, tittle:${title}`);
 			res.articles.forEach((dat, index) => {
 				const {
 					source: { name },
